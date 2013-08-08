@@ -21,6 +21,7 @@
 		3BD01C8D17B3C8E5007EB798 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD01C6F17B3C8E5007EB798 /* UIKit.framework */; };
 		3BD01C9517B3C8E5007EB798 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BD01C9317B3C8E5007EB798 /* InfoPlist.strings */; };
 		3BD01C9717B3C8E5007EB798 /* UIScrollView_LadderLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD01C9617B3C8E5007EB798 /* UIScrollView_LadderLayoutTests.m */; };
+		3BD01CA317B3C935007EB798 /* UIScrollView+LadderLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD01CA217B3C935007EB798 /* UIScrollView+LadderLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		3BD01C9217B3C8E5007EB798 /* UIScrollView+LadderLayoutTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIScrollView+LadderLayoutTests-Info.plist"; sourceTree = "<group>"; };
 		3BD01C9417B3C8E5007EB798 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3BD01C9617B3C8E5007EB798 /* UIScrollView_LadderLayoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIScrollView_LadderLayoutTests.m; sourceTree = "<group>"; };
+		3BD01CA117B3C935007EB798 /* UIScrollView+LadderLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+LadderLayout.h"; sourceTree = "<group>"; };
+		3BD01CA217B3C935007EB798 /* UIScrollView+LadderLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+LadderLayout.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		3BD01C7117B3C8E5007EB798 /* UIScrollView+LadderLayout */ = {
 			isa = PBXGroup;
 			children = (
+				3BD01CA017B3C916007EB798 /* src */,
 				3BD01C7A17B3C8E5007EB798 /* PAMAppDelegate.h */,
 				3BD01C7B17B3C8E5007EB798 /* PAMAppDelegate.m */,
 				3BD01C7D17B3C8E5007EB798 /* Main.storyboard */,
@@ -150,6 +154,15 @@
 				3BD01C9317B3C8E5007EB798 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BD01CA017B3C916007EB798 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				3BD01CA117B3C935007EB798 /* UIScrollView+LadderLayout.h */,
+				3BD01CA217B3C935007EB798 /* UIScrollView+LadderLayout.m */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +266,7 @@
 				3BD01C7817B3C8E5007EB798 /* main.m in Sources */,
 				3BD01C8217B3C8E5007EB798 /* PAMViewController.m in Sources */,
 				3BD01C7C17B3C8E5007EB798 /* PAMAppDelegate.m in Sources */,
+				3BD01CA317B3C935007EB798 /* UIScrollView+LadderLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +392,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIScrollView+LadderLayout/UIScrollView+LadderLayout-Prefix.pch";
 				INFOPLIST_FILE = "UIScrollView+LadderLayout/UIScrollView+LadderLayout-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -391,6 +406,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIScrollView+LadderLayout/UIScrollView+LadderLayout-Prefix.pch";
 				INFOPLIST_FILE = "UIScrollView+LadderLayout/UIScrollView+LadderLayout-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
